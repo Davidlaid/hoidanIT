@@ -3,7 +3,7 @@ import React from 'react';
 /*
 Các sự kiện xảy ra khi người dùng nhấn một phím trên bàn phím.
 Dùng onChange cho bàn phím, onClick-chuột, ...
-
+aaa
 */
 class MyComponent extends React.Component {
     //! giải thích từ khóa this:
