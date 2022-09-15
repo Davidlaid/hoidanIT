@@ -1,23 +1,7 @@
 import React from 'react';
-//! giải thích hàm onChange, thay đổi state
-/*
-Các sự kiện xảy ra khi người dùng nhấn một phím trên bàn phím.
-Dùng onChange cho bàn phím, onClick-chuột, ...
 
-*/
 class MyComponent extends React.Component {
-    //! giải thích từ khóa this:
-    /*
-      this chính là bản thân của cả component này (class MyComponent extends React.Component )
-      khi dùng this thì chương trình nó hiểu là đang gọi đến class MyComponent
-    */
 
-    
-    //! state
-    // state là memory(bộ nhớ). là một object
-    // sttate giúp ứng dụng cật nhật lại trang mà ko phải reload lại trang
-
-    // định nghĩa state global
   state = {
     name: "",
     chanel: "ho idan It"
@@ -26,8 +10,10 @@ class MyComponent extends React.Component {
   handleOnChange = (event) => {
     console.log("'event.target.value':", event.target.value, "'event target':",
     event.target, "'event obj':" , event);
+
     this.setState({
-      name: event.target.value
+      name: event.target.value,
+      channel: "avc"
     })
   }
 
@@ -56,3 +42,36 @@ class MyComponent extends React.Component {
 }
 
 export default  MyComponent;
+//! giải thích hàm onChange, thay đổi state
+/*
+Các sự kiện xảy ra khi người dùng nhấn một phím trên bàn phím.
+Dùng onChange cho bàn phím, onClick-chuột, ...
+
+*/
+//! giải thích từ khóa this:
+    /*
+      this chính là bản thân của cả component này (class MyComponent extends React.Component )
+      khi dùng this thì chương trình nó hiểu là đang gọi đến class MyComponent
+    */
+
+    
+//! state
+    // state là memory(bộ nhớ). là một object
+    // sttate giúp ứng dụng cật nhật lại trang mà ko phải reload lại trang
+    // lưu lại trạng thái ứng dụng, lưu các dữ liệu vào biến state
+
+    // định nghĩa state global
+
+
+//! setState
+/*
+- lưu thay đổi của hàm state
+*/
+//? Phân tích cú pháp:
+/*
+this.setState({
+  state cần thay đổi
+})
+-this.setState: là tên cú pháp hàm
+- ngoặc nhọn {}: vì state là một object
+*/
